@@ -1,0 +1,18 @@
+body{
+    background-color: brown;
+    padding: 2%;
+}
+
+h1{
+    color: bisque;
+}
+
+p{
+    width: 2px;
+    height: 2px;
+}
+
+img{
+    width: 250px;
+    height: 150px;
+}
