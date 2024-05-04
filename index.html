@@ -8,7 +8,7 @@
         <meta name="author" content="">
 
         <title>ImportadosVIP</title>
-        <link rel="shortcut icon" type="image/jpg" href="img/VIPimports.png"/>
+        <link rel="shortcut icon" type="image/jpg" href="img/VIPIMPORTADOS.png"/>
 
         <!-- CSS FILES -->    
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,21 +67,21 @@
                 </div>
 
                 <div class="d-none d-lg-block">
-                    <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Contate-nos</button>
+                    <button type="button" class="custom-btn btn btn-black" data-bs-toggle="modal" data-bs-target="#BookingModal">Contate-nos</button>
                 </div>
-
+                
             </div>
         </nav>
 
         <main>
 
-            <section class="hero" style="background-image: url('img/VIPimports.png'); background-size: cover;">
+            <section class="hero">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5 col-12 m-auto">
                             <div class="heroText">
                                 <div class="c-reviews my-3 d-flex flex-wrap align-items-center">
-                                    <p class="text-white w-100">Bem-Vindo</p>
+                                    <h4 class="text-white w-100">Bem-Vindos</h4>
                                 </div>
                             </div>
                         </div>
@@ -90,7 +90,7 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <div class="carousel-image-wrap">
-                                            <img src="img/VIPimports.png" class="img-fluid carousel-image img-cover" alt="">
+                                            <img src="img/VIPIMPORTADOS.png" class="carousel-image img-cover hero-image" alt="">
                                         </div>
                                     </div>
                                     <!-- Conteúdo dos outros slides -->
@@ -101,6 +101,8 @@
                 </div>
                 <div class="overlay"></div>
             </section>
+            
+            
             
             
             
@@ -457,66 +459,45 @@
         <div class="modal fade" id="BookingModal" tabindex="-1" aria-labelledby="BookingModal" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="mb-0">Reserve a table</h3>
-
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
+                    
 
                     <div class="modal-body d-flex flex-column justify-content-center">
                         <div class="booking">
                             
                             <form class="booking-form row" role="form" action="#" method="post">
                                 <div class="col-lg-6 col-12">
-                                    <label for="name" class="form-label">Full Name</label>
+                                    <label for="name" class="form-label">Nome completo</label>
 
-                                    <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Seu Nome" required>
                                 </div>
 
                                 <div class="col-lg-6 col-12">
-                                    <label for="email" class="form-label">Email Address</label>
+                                    <label for="phone" class="form-label">Número de telefone</label>
 
-                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="your@email.com" required>
+                                    <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="(00)00000-0000">
                                 </div>
 
                                 <div class="col-lg-6 col-12">
-                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <label for="email" class="form-label">Endereço de e-mail</label>
 
-                                    <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="123-456-7890">
+                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="seu@email.com" required>
                                 </div>
 
+                               
                                 <div class="col-lg-6 col-12">
-                                    <label for="people" class="form-label">Number of persons</label>
-
-                                    <input type="text" name="people" id="people" class="form-control" placeholder="12 persons">
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <label for="date" class="form-label">Date</label>
+                                    <label for="date" class="form-label">Data</label>
 
                                     <input type="date" name="date" id="date" value="" class="form-control">
                                 </div>
 
-                                <div class="col-lg-6 col-12">
-                                    <label for="time" class="form-label">Time</label>
-
-                                    <select class="form-select form-control" name="time" id="time">
-                                      <option value="5" selected>5:00 PM</option>
-                                      <option value="6">6:00 PM</option>
-                                      <option value="7">7:00 PM</option>
-                                      <option value="8">8:00 PM</option>
-                                      <option value="9">9:00 PM</option>
-                                    </select>
-                                </div>
-
                                 <div class="col-12">
-                                    <label for="message" class="form-label">Special Request</label>
+                                    <label for="message" class="form-label">Mensagem:</label>
 
                                     <textarea class="form-control" rows="4" id="message" name="message" placeholder=""></textarea>
                                 </div>
 
                                 <div class="col-lg-4 col-12 ms-auto">
-                                    <button type="submit" class="form-control">Submit Request</button>
+                                    <button type="submit" class="form-control">Enviar</button>
                                 </div>
                             </form>
                         </div>
