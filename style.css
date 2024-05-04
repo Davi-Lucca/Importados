@@ -1,5 +1,5 @@
 body{
-    background-color: brown;
+    background-color: rgb(110, 110, 110);
     padding: 2%;
 }
 
@@ -15,4 +15,42 @@ p{
 img{
     width: 250px;
     height: 150px;
+}
+
+.hero {
+    position: relative;
+    background-color: black; /* Cor de fundo de fallback */
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Opacidade do fundo */
+    z-index: 1; /* Colocar o overlay sobre a imagem */
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2; /* Garantir que o conteúdo fique sobre o overlay */
+}
+
+.hero .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garantir que a imagem cubra todo o espaço */
+}
+
+.hero {
+    background-image: url('caminho/para/sua/imagem.jpg');
+    background-size: cover;
+    width: 100%; /* Defina a largura desejada */
+    height: 100vh; /* Defina a altura desejada */
+    padding: 0; /* Certifique-se de que não há preenchimento */
+    margin: 0; /* Certifique-se de que não há margem */
 }
