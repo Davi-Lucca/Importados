@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Vender - ImportadosVIP</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/VIPIMPORTADOS.png"/>
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="mb-4">Carrinho de Compras</h1>
+        <form action="#" method="post" class="row g-3">
+            <div class="col-md-6">
+                <label for="inputName" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="inputName" name="name" required>
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" name="email" required>
+            </div>
+            <div class="col-md-6">
+                <label for="inputPhone" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" id="inputPhone" name="phone" required>
+            </div>
+            <div class="col-md-6">
+                <label for="inputAddress" class="form-label">Endereço de Entrega</label>
+                <input type="text" class="form-control" id="inputAddress" name="address" required>
+            </div>
+            <div class="col-12">
+                <label for="inputProduct" class="form-label">Produto</label>
+                <input type="text" class="form-control" id="inputProduct" name="product" required>
+            </div>
+            <div class="col-md-6">
+                <label for="inputQuantity" class="form-label">Quantidade</label>
+                <input type="number" class="form-control" id="inputQuantity" name="quantity" min="1" required>
+            </div>
+            <div class="col-md-6">
+                <label for="inputPayment" class="form-label">Forma de Pagamento</label>
+                <select class="form-select" id="inputPayment" name="payment" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="cartao">Cartão de Crédito</option>
+                    <option value="boleto">Boleto Bancário</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="pix">PIX</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <label for="inputNote" class="form-label">Observações</label>
+                <textarea class="form-control" id="inputNote" rows="3" name="note"></textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Finalizar Pedido</button>
+            </div>
+        </form>
+    </div>
+
+      <!-- JAVASCRIPT FILES -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/custom.js"></script>
+
+</body>
+</html>

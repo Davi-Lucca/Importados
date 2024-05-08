@@ -211,7 +211,7 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                                 <img src="img/fonebass.png" class="img-fluid menu-image" alt="">
 
                                 <div class="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 class="mb-0">Fone Bass Branco</h4>
+                                    <h4 class="mb-0">Fone Bass Branco</h4> 
 
                                     <span class="price-tag bg-white shadow-lg ms-4"><small>R$</small>245,00</span>
 
@@ -416,35 +416,61 @@ https://www.tooplate.com/view/2129-crispy-kitchen
              
         </footer>
 
-        <!--Modal-->
-
-        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+        <!-- Modal -->
+        <div class="modal fade" id="BookingModal" tabindex="-1" aria-labelledby="BookingModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="contactModalLabel">Contate-nos</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    
+
+                    <div class="modal-body d-flex flex-column justify-content-center">
+                        <div class="booking">
+                            
+                            <form class="booking-form row" role="form" action="#" method="post">
+                                <div class="col-lg-6 col-12">
+                                    <label for="name" class="form-label">Nome completo</label>
+
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Seu Nome" required>
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <label for="phone" class="form-label">Número de telefone</label>
+
+                                    <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="(00)00000-0000">
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <label for="email" class="form-label">Endereço de e-mail</label>
+
+                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="seu@email.com" required>
+                                </div>
+
+                               
+                                <div class="col-lg-6 col-12">
+                                     <label for="date" class="form-label">Data</label>
+
+                                    <input type="date" name="date" id="date" value="" class="form-control">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Mensagem:</label>
+
+                                    <textarea class="form-control" rows="4" id="message" name="message" placeholder=""></textarea>
+                                </div>
+
+                                <div class="col-lg-4 col-12 ms-auto">
+                                    <button type="submit" class="form-control">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="name" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Endereço de Email</label>
-                                <input type="email" class="form-control" id="email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Mensagem</label>
-                                <textarea class="form-control" id="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-                        </form>
-                    </div>
+
+                    <div class="modal-footer"></div>
+                    
                 </div>
+                
             </div>
         </div>
+        
 
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
