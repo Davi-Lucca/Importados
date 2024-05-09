@@ -3,13 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <meta name="description" content="">
         <meta name="author" content="">
-
         <title>ImportadosVIP</title>
         <link rel="shortcut icon" type="image/jpg" href="img/VIPIMPORTADOS.png"/>
-
         <!-- CSS FILES -->    
         <link rel="preconnect" href="https://fonts.googleapis.com">
         
@@ -17,22 +14,70 @@
         
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">                    
         <link href="css/bootstrap.min.css" rel="stylesheet">
-
         <link href="css/bootstrap-icons.css" rel="stylesheet">
-
         <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
-
         <link href="style.css" rel="stylesheet">
-
         <style>
             .inline-text {
                  display: inline; /* ou display: inline-block; */
             }
+            .site-header {
+                background-image: url('img/VIPIMPORTADOS.png');
+                background-size: cover;
+                background-position: center;
+                height: 100vh; /* Altura total da viewport */
+                display: flex;
+                align-items: center; /* Centralizar verticalmente */
+                justify-content: center; /* Centralizar horizontalmente */
+                text-align: center; /* Centralizar texto */
+                color: white;
+            }
+        
+            .site-header h1,
+            .site-header strong {
+                margin-bottom: 20px; /* Espaço entre o título e a descrição */
+            }
+        
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5); /* Adiciona uma sobreposição semi-transparente */
+            }
 
+            .site-header {
+                background-image: url('img/VIPIMPORTADOS.png');
+                background-size: cover;
+                background-position: center;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: white;
+            }
+            .site-header h1,
+            .site-header strong {
+                margin-bottom: 20px;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            .btn-black {
+                background-color: black;
+                color: white;
+            }
+            
         </style>
         
         
-
         
     </head>
     
@@ -46,45 +91,36 @@
                 
                 <a class="navbar-brand" href="index.html">
                 </a>
-
                 <div class="d-lg-none">
                     <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservation</button>
                 </div>
-
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">Home</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="smartphones.html">Celulares</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="fones.html">Fones bluetooth</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="notebooks.html">Notebooks</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="smartwatch.html">Smart watch</a>
                         </li>
                     </ul>
                 </div>
-
                 <div class="d-none d-lg-block">
                     <button type="button" class="custom-btn btn btn-black" data-bs-toggle="modal" data-bs-target="#BookingModal">Contate-nos</button>
                 </div>
                 
             </div>
         </nav>
-
         <main>
-
-            <section class="hero">
+            <section class="site-header">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5 col-12 m-auto">
@@ -96,14 +132,7 @@
                         </div>
                         <div class="col-lg-7 col-12">
                             <div id="carouselExampleCaptions" class="carousel carousel-fade hero-carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="carousel-image-wrap">
-                                            <img src="img/VIPIMPORTADOS.png" class="carousel-image img-cover hero-image" alt="">
-                                        </div>
-                                    </div>
-                                    
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -112,10 +141,10 @@
             </section>
             
             
+            
              <section class="menu section-padding">
                 <div class="container">
                     <div class="row">
-
                         <div class="col-12">
                             <h3 class="text-center mb-lg-5 mb-4">Super queima de estoque!</h3>
                         <br>
@@ -127,20 +156,15 @@
                             <div class="menu-thumb">
                                 <div class="menu-image-wrap">
                                     <img src="img/xiaomi.png" class="img-fluid menu-image" alt="">
-
                                     <span class="menu-tag bg-warning">- 20% </span>
                                 </div>
-
                                 <div class="menu-info d-flex flex-wrap align-items-center">
                                     <br><br><br><br><br>
                                     <h4 class="mb-0">Xiaomi</h4>
-
                                     <span class="price-tag bg-white shadow-lg ms-4"><small>R$</small>2.500,00</span>
-
                                    
                                     <div class="d-flex flex-wrap align-items-center w-100 mt-2">
                                         <h6 class="reviews-text mb-0 me-3">3/5</h6>
-
                                         <div class="reviews-stars">
                                             <i class="bi-star-fill reviews-icon"></i>
                                             <i class="bi-star-fill reviews-icon"></i>
@@ -148,31 +172,25 @@
                                             <i class="bi-star reviews-icon"></i>
                                             <i class="bi-star reviews-icon"></i>
                                         </div>
-
                                         <p class="reviews-text mb-0 ms-4">102 Reviews</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="menu-thumb">
                                 <div class="menu-image-wrap">
                                     <img src="img/smartwatch.png" class="img-fluid menu-image" alt="">
-
                                     <span class="menu-tag bg-warning">- 30% </span>
                                 </div>
-
                                 <div class="menu-info d-flex flex-wrap align-items-center">
                                     <h4 class="mb-0">Smart W.</h4>
-
                                     <span class="price-tag bg-white shadow-lg ms-4"><small>R$</small>120,00</span>
                                     
                                     
                                       <div class="d-flex flex-wrap align-items-center w-100 mt-2">
                                         <h6 class="reviews-text mb-0 me-3">3.2/5</h6>
-
                                         <div class="reviews-stars">
                                             <i class="bi-star-fill reviews-icon"></i>
                                             <i class="bi-star-fill reviews-icon"></i>
@@ -180,7 +198,6 @@
                                             <i class="bi-star reviews-icon"></i>
                                             <i class="bi-star reviews-icon"></i>
                                         </div>
-
                                         <p class="reviews-text mb-0 ms-4">86 Reviews</p>
                                     </div>
                                 </div>
@@ -190,26 +207,20 @@
                             <br>
                             <br>
                         </div>
-
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="menu-thumb">
                                 <div class="menu-image-wrap">
                                     <img src="img/iphone.png" class="img-fluid menu-image" alt="">
-
                                     <span class="menu-tag bg-warning">- 15% </span>
                                 </div>
-
                                 <div class="menu-info d-flex flex-wrap align-items-center">
                                     <br><br><br>
                                     <h4 class="mb-0">Iphone 15 </h4>
-
                                     <span class="price-tag bg-white shadow-lg ms-4"><small>R$</small>7.500,00</span>
                                     
                                    
-
                                     <div class="d-flex flex-wrap align-items-center w-100 mt-2">
                                         <h6 class="reviews-text mb-0 me-3">4.5/5</h6>
-
                                         
                                         <div class="reviews-stars">
                                             <i class="bi-star-fill reviews-icon"></i>
@@ -218,33 +229,24 @@
                                             <i class="bi-star-fill reviews-icon"></i>
                                             <i class="bi-star reviews-icon"></i>
                                         </div>
-
                                         <p class="reviews-text mb-0 ms-4">150 Reviews</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="menu-thumb">
                                 <div class="menu-image-wrap">
                                     <img src="img/notebook.png" class="img-fluid menu-image" alt="">
-
                                     <span class="menu-tag bg-warning">- 25%</span>
                                 </div>
-
                                 <div class="menu-info d-flex flex-wrap align-items-center">
                                     <br><br><br><br><br><br>
                                     <h4 class="mb-0">Notebook</h4>
-
                                     <span class="price-tag bg-white shadow-lg ms-4"><small>R$</small>6.299,99</span>
-
                                     
-
                                     <div class="d-flex flex-wrap align-items-center w-100 mt-2">
                                         <h6 class="reviews-text mb-0 me-3">3.7/5</h6>
-
                                         <div class="reviews-stars">
                                             <i class="bi-star-fill reviews-icon"></i>
                                             <i class="bi-star-fill reviews-icon"></i>
@@ -252,30 +254,23 @@
                                             <i class="bi-star reviews-icon"></i>
                                             <i class="bi-star reviews-icon"></i>
                                         </div>
-
                                         <p class="reviews-text mb-0 ms-4">44 Reviews</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="menu-thumb">
                                 <div class="menu-image-wrap">
                                     <img src="img/fonebass.png" class="img-fluid menu-image" alt="">
-
                                     <span class="menu-tag bg-warning">- 65% </span>
                                 </div>
-
                                 <div class="menu-info d-flex flex-wrap align-items-center">
                                     <br><br>
                                     <h4 class="mb-0">Fone bass</h4>
-
                                     <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>20.50</span>
-
                                     <div class="d-flex flex-wrap align-items-center w-100 mt-2">
                                         <h6 class="reviews-text mb-0 me-3">4.3/5</h6>
-
                                         <div class="reviews-stars">
                                             <i class="bi-star-fill reviews-icon"></i>
                                             <i class="bi-star-fill reviews-icon"></i>
@@ -283,30 +278,23 @@
                                             <i class="bi-star-fill reviews-icon"></i>
                                             <i class="bi-star reviews-icon"></i>
                                         </div>
-
                                         <p class="reviews-text mb-0 ms-4">102 Reviews</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="menu-thumb">
                                 <div class="menu-image-wrap">
                                     <img src="img/fonebluetooth.png" class="img-fluid menu-image" alt="">
-
                                     <span class="menu-tag bg-warning">- 25% </span>
                                 </div>
-
                                 <div class="menu-info d-flex flex-wrap align-items-center">
                                     <br><br><br><br>
                                     <h4 class="mb-0">Fone Bl.</h4>
-
                                     <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>34.20</span>
-
                                     <div class="d-flex flex-wrap align-items-center w-100 mt-2">
                                         <h6 class="reviews-text mb-0 me-3">3/5</h6>
-
                                         <div class="reviews-stars">
                                             <i class="bi-star-fill reviews-icon"></i>
                                             <i class="bi-star-fill reviews-icon"></i>
@@ -314,7 +302,6 @@
                                             <i class="bi-star reviews-icon"></i>
                                             <i class="bi-star reviews-icon"></i>
                                         </div>
-
                                         <p class="reviews-text mb-0 ms-4">64 Reviews</p>
                                     </div>
                                 </div>
@@ -327,16 +314,12 @@
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="menu-thumb">
                                 <img src="img/not2.png" class="img-fluid menu-image" alt="">
-
                                 <div class="menu-info d-flex flex-wrap align-items-center">
                                     <br><br><br><br><br><br><br>
                                     <h4 class="mb-0">Apple Mac</h4>
-
                                     <span class="price-tag bg-white shadow-lg ms-4"><small>R$</small>10,199.99</span>
-
                                     <div class="d-flex flex-wrap align-items-center w-100 mt-2">
                                         <h6 class="reviews-text mb-0 me-3">4.7/5</h6>
-
                                         <div class="reviews-stars">
                                             <i class="bi-star-fill reviews-icon"></i>
                                             <i class="bi-star-fill reviews-icon"></i>
@@ -344,7 +327,6 @@
                                             <i class="bi-star-fill reviews-icon"></i>
                                             <i class="bi-star reviews-icon"></i>
                                         </div>
-
                                         <p class="reviews-text mb-0 ms-4">366 Reviews</p>
                                     </div>
                                 </div>
@@ -373,15 +355,11 @@
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="menu-thumb">
                                 <img src="img/fone4.png" class="img-fluid menu-image" alt="">
-
                                 <div class="menu-info d-flex flex-wrap align-items-center">
                                     <h4 class="mb-0">Fone Bl.</h4>
-
                                     <span class="price-tag bg-white shadow-lg ms-4"><small>R$</small>150,00</span>
-
                                     <div class="d-flex flex-wrap align-items-center w-100 mt-2">
                                         <h6 class="reviews-text mb-0 me-3">3/5</h6>
-
                                         <div class="reviews-stars">
                                             <i class="bi-star-fill reviews-icon"></i>
                                             <i class="bi-star-fill reviews-icon"></i>
@@ -389,25 +367,19 @@
                                             <i class="bi-star reviews-icon"></i>
                                             <i class="bi-star reviews-icon"></i>
                                         </div>
-
                                         <p class="reviews-text mb-0 ms-4">304 Reviews</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
-
             <section class="BgImage"></section>
-
             <section class="news section-padding">
                 <div class="container">
                     <div class="row">
-
                         <h2 class="text-center mb-lg-5 mb-4">Não perca essa oportunidade!</h2>
-
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="news-thumb mb-4">
                                 <a href="fones.html">
@@ -415,7 +387,6 @@
                                 </a>              
                             </div> 
                         </div>
-
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="news-thumb mb-4">
                                 <a href="smartphones.html">
@@ -468,16 +439,13 @@
                                 
                                 <div class="news-text-info">
                                     <span class="category-tag me-3 bg-info">Promoção</span>
-
                                     <strong>8 Junho 2024</strong>
-
                                     <h5 class="news-title mt-2">
                                         <a href="" class="news-title-link">Não fique de fora dessa</a>
                                     </h5>
                                 </div>
                             </div> 
                         </div>
-
                         <div class="col-lg-4 col-md-4 col-12">
                             <div class="news-thumb mb-lg-0 mb-lg-4 mb-2">
                                 <a href="fones.html">
@@ -486,14 +454,12 @@
                                 
                                 <div class="news-text-info">
                                     <span class="category-tag">Novidade</span>
-
                                     <h5 class="news-title mt-2">
                                         <a href="" class="news-title-link">Super oferta de dia das mães</a>
                                     </h5>
                                 </div>
                             </div> 
                         </div>
-
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="news-thumb mb-4">
                                 <a href="notebooks.html">
@@ -506,16 +472,13 @@
                                     <br>
                                     <span class="category-tag me-3 bg-info">Desconto</span>
                                    
-
                                     <strong>30 Julho 2024</strong>
-
                                     <h5 class="news-title mt-2">
                                         <a href="" class="news-title-link">Produtos com até 30% de desconto</a>
                                     </h5>
                                 </div>
                             </div> 
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -544,17 +507,13 @@
             
             
             
-
         </main>
-
         <footer class="site-footer section-padding">
             
             <div class="container">
                 
                 <div class="row">
-
                 
-
                     <div class="col-lg-4 col-md-7 col-xs-12 tooplate-mt30">
                         
                         <h6 class="text-white mb-lg-4 mb-3">Localização</h6>
@@ -571,31 +530,23 @@
                     
                     <div class="col-lg-4 col-md-5 col-xs-12 tooplate-mt30">
                         <h6 class="text-white mb-lg-4 mb-3">Atendimento</h6>
-
                         <p class="mb-2">Segunda </p><br><p>à Sexta</p>
                         <br>
                         <br>
-
                         <p>07:00 AM 08:00 PM</p>
                         <br>
                         <br>
                         <br>
                         <br>
-
                         <p>Tel: <a href="tel: 010-02-0340" class="tel-link">080-72-3240</a></p>
                     </div>
-
                     <div class="col-lg-4 col-md-6 col-xs-12 tooplate-mt30">
                         <h6 class="text-white mb-lg-4 mb-3">Social</h6>
-
                         <ul class="social-icon">
                             <li><a href="#" class="social-icon-link bi-facebook"></a></li>
-
                             <li><a href="#" class="social-icon-link bi-instagram"></a></li>
-
                             <li><a href="https://twitter.com/search?q=tooplate.com&src=typed_query&f=live" target="_blank"
                             	 class="social-icon-link bi-twitter"></a></li>
-
                             <li><a href="#" class="social-icon-link bi-youtube"></a></li>
                         </ul>
                     
@@ -603,62 +554,51 @@
                         <br>Todos os direitos reservados: <a rel="nofollow" href="index.html" target="_blank">VIPimportados</a></p>
                         
                     </div>
-
                 </div><!-- row ending -->
                 
              </div><!-- container ending -->
              
         </footer>
         
-
         <!-- Modal -->
         <div class="modal fade" id="BookingModal" tabindex="-1" aria-labelledby="BookingModal" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content">
                     
-
                     <div class="modal-body d-flex flex-column justify-content-center">
                         <div class="booking">
                             
                             <form class="booking-form row" role="form" action="#" method="post">
                                 <div class="col-lg-6 col-12">
                                     <label for="name" class="form-label">Nome completo</label>
-
                                     <input type="text" name="name" id="name" class="form-control" placeholder="Seu Nome" required>
                                 </div>
-
                                 <div class="col-lg-6 col-12">
                                     <label for="phone" class="form-label">Número de telefone</label>
-
                                     <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="(00)00000-0000">
                                 </div>
-
                                 <div class="col-lg-6 col-12">
                                     <label for="email" class="form-label">Endereço de e-mail</label>
-
                                     <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="seu@email.com" required>
                                 </div>
 
-                               
+
                                 <div class="col-lg-6 col-12">
+                                    <label for="date" class="form-label">Data</label>
                                      <label for="date" class="form-label">Data</label>
 
                                     <input type="date" name="date" id="date" value="" class="form-control">
                                 </div>
-
                                 <div class="col-12">
                                     <label for="message" class="form-label">Mensagem:</label>
-
                                     <textarea class="form-control" rows="4" id="message" name="message" placeholder=""></textarea>
                                 </div>
-
                                 <div class="col-lg-4 col-12 ms-auto">
                                     <button type="submit" class="form-control">Enviar</button>
                                 </div>
                             </form>
                         </div>
                     </div>
-
                     <div class="modal-footer"></div>
                     
                 </div>
@@ -666,11 +606,9 @@
             </div>
         </div>
         
-
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/custom.js"></script>
-
     </body>
 </html>
