@@ -22,7 +22,9 @@
             background-color: #f8f9fa;
         }
         h1{
-            text-align: center;
+            text-align: left;
+            font-size: 53px; /* Reduzindo o tamanho do texto */
+            margin-bottom: 20px; /* Adicionando margem inferior */
         }
         .navbar {
             background-color: #343a40;
@@ -31,9 +33,10 @@
             max-height: 50px;
         }
         .search-bar {
+            
             background-color: #ffffff;
-            border-radius: 0px;
-            padding: 8px 12px;
+            border-radius: 20px;
+            padding: 8px 50px; /*Barra pesquisar (comp.)*/
             border: none;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -41,7 +44,7 @@
             background-color: #000000; /* Cor preta */
             color: #ffffff;
             border: none;
-            border-radius: 0px;
+            border-radius: 20px;
             padding: 8px 20px;
             font-weight: bold;
             transition: all 0.3s ease;
@@ -66,9 +69,23 @@
         .btn-primary:hover {
             background-color: #0056b3;
         }
+        .endereco-container {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            max-width: 500px; /* Largura máxima */
+            margin: 0 auto; /* Centralizar horizontalmente */
+        }
+        .endereco-container input,
+        .endereco-container select {
+            max-width: 100%; /* Largura máxima dos campos de entrada */
+            width: 100%;
+        }
     </style>
 </head>
 <body>
+    
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
@@ -82,29 +99,74 @@
             <button class="btn btn-contact" data-bs-toggle="modal" data-bs-target="#BookingModal">Contate-nos</button>
         </div>
     </nav>
-
+    
     <div class="container py-5">
         <h1 class="mb-4">Carrinho de Compras</h1>
-        <form action="#" method="post" class="row g-3">
-            <!-- Seu formulário de carrinho de compras aqui -->
-        </form>
+        <br><br><br>
+        <!-- Endereço de entrega -->
+        <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
+            <h5 class="mb-3">Endereço de Entrega</h5>
+            <div class="mb-3">
+                <label for="inputRua" class="form-label">Rua</label>
+                <input type="text" class="form-control" id="inputRua" required>
+            </div>
+            <div class="mb-3">
+                <label for="inputNumero" class="form-label">Número</label>
+                <input type="text" class="form-control" id="inputNumero" required>
+            </div>
+            <div class="mb-3">
+                <label for="inputBairro" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="inputBairro" required>
+            </div>
+            <div class="mb-3">
+                <label for="inputCidade" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="inputCidade" required>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="inputCep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="inputCep" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="inputUF" class="form-label">UF</label>
+                    <input type="text" class="form-control" id="inputUF" required>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formas de pagamento -->
+        <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
+            <h5 class="mb-3">Forma de Pagamento</h5>
+            <div class="mb-3">
+                <select class="form-select" id="inputFormaPagamento" required>
+                    <option value="pix">Pix</option>
+                    <option value="cartao">Cartão</option>
+                    <option value="boleto">Boleto</option>
+                    <option value="transferencia">Transferência Bancária</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Quantidade -->
+        <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
+            <h5 class="mb-3">Quantidade</h5>
+            <div class="mb-3">
+                <input type="number" class="form-control" id="inputQuantidade" required>
+            </div>
+        </div>
+
+        <!-- Botão Finalizar Pedido -->
+        <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
+            <button type="button" class="btn btn-primary">Finalizar Pedido</button>
+        </div>
     </div>
-
-    <!-- Seu rodapé e scripts JavaScript aqui -->
-
-    <!-- JAVASCRIPT FILES -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/custom.js"></script>
 
     <!-- Modal -->
     <div class="modal fade" id="BookingModal" tabindex="-1" aria-labelledby="BookingModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
-                
                 <div class="modal-body d-flex flex-column justify-content-center">
                     <div class="booking">
-                        
                         <form class="booking-form row" role="form" action="#" method="post">
                             <div class="col-lg-6 col-12">
                                 <label for="name" class="form-label">Nome completo</label>
@@ -118,12 +180,8 @@
                                 <label for="email" class="form-label">Endereço de e-mail</label>
                                 <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="seu@email.com" required>
                             </div>
-
-
                             <div class="col-lg-6 col-12">
                                 <label for="date" class="form-label">Data</label>
-                                 <label for="date" class="form-label">Data</label>
-
                                 <input type="date" name="date" id="date" value="" class="form-control">
                             </div>
                             <div class="col-12">
@@ -137,10 +195,15 @@
                     </div>
                 </div>
                 <div class="modal-footer"></div>
-                
             </div>
-            
         </div>
     </div>
+
+    <!-- Seu rodapé e scripts JavaScript aqui -->
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>
