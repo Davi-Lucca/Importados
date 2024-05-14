@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Carrinho de Compras - ImportadosVIP</title>
+
+    <title>ImportadosVIP</title>
     <link rel="shortcut icon" type="image/jpg" href="img/VIPIMPORTADOS.png"/>
-    <!-- CSS FILES -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <link href="css/bootstrap-icons.css" rel="stylesheet">
+
     <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
+
     <link href="style.css" rel="stylesheet">
+
+
     <style>
         /* Estilos personalizados para a página de carrinho de compras */
         body {
@@ -89,8 +98,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/VIPIMPORTADOS.png" alt="ImportadosVIP">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/VIPIMPORTADOS.png">
             </a>
             <form class="d-flex mx-auto">
                 <input class="form-control me-2 search-bar" type="search" placeholder="Pesquisar produtos" aria-label="Search">
@@ -101,64 +110,70 @@
     </nav>
     
     <div class="container py-5">
-        <h1 class="mb-4">Carrinho de Compras</h1>
-        <br><br><br>
-        <!-- Endereço de entrega -->
-        <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
-            <h5 class="mb-3">Endereço de Entrega</h5>
-            <div class="mb-3">
-                <label for="inputRua" class="form-label">Rua</label>
-                <input type="text" class="form-control" id="inputRua" required>
-            </div>
-            <div class="mb-3">
-                <label for="inputNumero" class="form-label">Número</label>
-                <input type="text" class="form-control" id="inputNumero" required>
-            </div>
-            <div class="mb-3">
-                <label for="inputBairro" class="form-label">Bairro</label>
-                <input type="text" class="form-control" id="inputBairro" required>
-            </div>
-            <div class="mb-3">
-                <label for="inputCidade" class="form-label">Cidade</label>
-                <input type="text" class="form-control" id="inputCidade" required>
-            </div>
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="inputCep" class="form-label">CEP</label>
-                    <input type="text" class="form-control" id="inputCep" required>
+            <h1 class="mb-4">Carrinho de Compras</h1>
+            <br><br><br>
+            
+                <form id="formPedido">
+                <!-- Endereço de entrega -->
+                <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
+                    <h5 class="mb-3">Endereço de Entrega</h5>
+                    <div class="mb-3">
+                        <label for="inputRua" class="form-label">Rua</label>
+                        <input type="text" class="form-control" id="inputRua" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputNumero" class="form-label">Número</label>
+                        <input type="text" class="form-control" id="inputNumero" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputBairro" class="form-label">Bairro</label>
+                        <input type="text" class="form-control" id="inputBairro" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputCidade" class="form-label">Cidade</label>
+                        <input type="text" class="form-control" id="inputCidade" required>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="inputCep" class="form-label">CEP</label>
+                            <input type="text" class="form-control" id="inputCep" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="inputUF" class="form-label">UF</label>
+                            <input type="text" class="form-control" id="inputUF" required>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 mb-3">
-                    <label for="inputUF" class="form-label">UF</label>
-                    <input type="text" class="form-control" id="inputUF" required>
+
+                <!-- Formas de pagamento -->
+                <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
+                    <h5 class="mb-3">Forma de Pagamento</h5>
+                    <div class="mb-3">
+                        <select class="form-select" id="inputFormaPagamento" required>
+                            <option value="pix">Pix</option>
+                            <option value="cartao">Cartão</option>
+                            <option value="boleto">Boleto</option>
+                            <option value="transferencia">Transferência Bancária</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- Formas de pagamento -->
-        <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
-            <h5 class="mb-3">Forma de Pagamento</h5>
-            <div class="mb-3">
-                <select class="form-select" id="inputFormaPagamento" required>
-                    <option value="pix">Pix</option>
-                    <option value="cartao">Cartão</option>
-                    <option value="boleto">Boleto</option>
-                    <option value="transferencia">Transferência Bancária</option>
-                </select>
-            </div>
-        </div>
+                <!-- Quantidade -->
+                <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
+                    <h5 class="mb-3">Quantidade</h5>
+                    <div class="mb-3">
+                        <input type="number" class="form-control" id="inputQuantidade" required>
+                    </div>
+                </div>
 
-        <!-- Quantidade -->
-        <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
-            <h5 class="mb-3">Quantidade</h5>
-            <div class="mb-3">
-                <input type="number" class="form-control" id="inputQuantidade" required>
-            </div>
-        </div>
+                <!-- Campo oculto para o ID do produto -->
+                <input type="hidden" id="produtoId">
 
-        <!-- Botão Finalizar Pedido -->
-        <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
-            <button type="button" class="btn btn-primary">Finalizar Pedido</button>
-        </div>
+                <!-- Botão Finalizar Pedido -->
+                <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
+                    <button type="button" id="finalizarPedidoBtn" class="btn btn-primary">Finalizar Pedido</button>
+                </div>
+            </form>
     </div>
 
     <!-- Modal -->
@@ -198,12 +213,128 @@
             </div>
         </div>
     </div>
+    <footer class="site-footer section-padding">
+            
+        <div class="container">
+            
+            <div class="row">
+            
+                <div class="col-lg-4 col-md-7 col-xs-12 tooplate-mt30">
+                    
+                    <h6 class="text-white mb-lg-4 mb-3">Localização</h6>
+                    <br>
+                    
+                    <p>Campina Grande-PB Brasil.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    
+                    <a href="https://maps.app.goo.gl/FcDbgNeJ44aaemXX7" class="custom-btn btn btn-dark mt-2">Local</a>
+                </div>
+                
+                <div class="col-lg-4 col-md-5 col-xs-12 tooplate-mt30">
+                    <h6 class="text-white mb-lg-4 mb-3">Atendimento</h6>
+                    <p class="mb-2">Segunda </p><br><p>à Sexta</p>
+                    <br>
+                    <br>
+                    <p>07:00 AM 08:00 PM</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p>Tel: <a href="tel: 010-02-0340" class="tel-link">080-72-3240</a></p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 tooplate-mt30">
+                    <h6 class="text-white mb-lg-4 mb-3">Social</h6>
+                    <ul class="social-icon">
+                        <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+                        <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+                        <li><a href="https://twitter.com/search?q=tooplate.com&src=typed_query&f=live" target="_blank"
+                             class="social-icon-link bi-twitter"></a></li>
+                        <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+                    </ul>
+                
+                    <p class="copyright-text tooplate-mt60"> © 2024 VIP importados Co., Ltd.
+                    <br>Todos os direitos reservados: <a rel="nofollow" href="index.html" target="_blank">VIPimportados</a></p>
+                    
+                </div>
+            </div><!-- row ending -->
+            
+         </div><!-- container ending -->
+         
+    </footer>
 
-    <!-- Seu rodapé e scripts JavaScript aqui -->
+    
 
-    <!-- JAVASCRIPT FILES -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script>
+        // Define o estoque inicial de cada produto
+        var estoqueInicial = {
+            xiaomi: 100,
+            smartW: 100,
+            iphone15: 100,
+            notebook: 100,
+            fonebass: 100,
+            fonebluetooth: 100,
+            applemac: 100,
+            samsungs24: 100,
+            fonebl2: 100,
+            iphone14: 100,
+            iphone13: 100,
+            samsungs21: 100,
+            samsungs23: 100,
+            redminote13: 100,
+            redminote12: 100
+        };
+
+        // Verifica se o estoque já está definido no localStorage
+        if (!localStorage.getItem("estoque")) {
+            // Se não estiver definido, armazena o estoque inicial no localStorage
+            localStorage.setItem("estoque", JSON.stringify(estoqueInicial));
+        } else {
+            // Se estiver definido, atualiza o estoque para os novos valores
+            var estoqueAtual = JSON.parse(localStorage.getItem("estoque"));
+            for (var produto in estoqueInicial) {
+                estoqueAtual[produto] = 100;
+            }
+            localStorage.setItem("estoque", JSON.stringify(estoqueAtual));
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // Obtém os parâmetros da URL
+            var urlParams = new URLSearchParams(window.location.search);
+            var produtoId = urlParams.get('produto');
+
+            // Define o valor do campo oculto
+            document.getElementById("produtoId").value = produtoId;
+
+            // Adiciona um ouvinte de evento de clique ao botão "Finalizar Pedido"
+            document.getElementById("finalizarPedidoBtn").addEventListener("click", function() {
+                var quantidade = parseInt(document.getElementById("inputQuantidade").value);
+                var produto = document.getElementById("produtoId").value;
+
+                if (quantidade > 0) {
+                    var estoque = JSON.parse(localStorage.getItem("estoque"));
+
+                    if (quantidade <= estoque[produto]) {
+                        estoque[produto] -= quantidade;
+                        localStorage.setItem("estoque", JSON.stringify(estoque));
+                        alert("Pedido finalizado com sucesso!");
+
+                        // Limpa o formulário após a finalização do pedido
+                        document.getElementById("formPedido").reset();
+                    } else {
+                        alert("Quantidade indisponível em estoque. Por favor, selecione uma quantidade menor.");
+                    }
+                } else {
+                    alert("Quantidade inválida! Por favor, insira uma quantidade válida.");
+                }
+            });
+        });
+    </script>
+    
+
+    
+    
 </body>
 </html>
