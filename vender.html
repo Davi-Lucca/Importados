@@ -114,65 +114,65 @@
             <br><br><br>
             
                 <form id="formPedido">
-                <!-- Endereço de entrega -->
-                <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
-                    <h5 class="mb-3">Endereço de Entrega</h5>
-                    <div class="mb-3">
-                        <label for="inputRua" class="form-label">Rua</label>
-                        <input type="text" class="form-control" id="inputRua" required>
+                    <!-- Endereço de entrega -->
+                    <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
+                        <h5 class="mb-3">Endereço de Entrega</h5>
+                        <div class="mb-3">
+                            <label for="inputRua" class="form-label">Rua</label>
+                            <input type="text" class="form-control" id="inputRua" required>
                     </div>
                     <div class="mb-3">
-                        <label for="inputNumero" class="form-label">Número</label>
-                        <input type="text" class="form-control" id="inputNumero" required>
+                            <label for="inputNumero" class="form-label">Número</label>
+                            <input type="text" class="form-control" id="inputNumero" required>
+                        </div>
+                    <div class="mb-3">
+                            <label for="inputBairro" class="form-label">Bairro</label>
+                            <input type="text" class="form-control" id="inputBairro" required>
                     </div>
                     <div class="mb-3">
-                        <label for="inputBairro" class="form-label">Bairro</label>
-                        <input type="text" class="form-control" id="inputBairro" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="inputCidade" class="form-label">Cidade</label>
-                        <input type="text" class="form-control" id="inputCidade" required>
+                            <label for="inputCidade" class="form-label">Cidade</label>
+                            <input type="text" class="form-control" id="inputCidade" required>
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="inputCep" class="form-label">CEP</label>
-                            <input type="text" class="form-control" id="inputCep" required>
+                                <label for="inputCep" class="form-label">CEP</label>
+                                <input type="text" class="form-control" id="inputCep" required>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="inputUF" class="form-label">UF</label>
-                            <input type="text" class="form-control" id="inputUF" required>
+                                <label for="inputUF" class="form-label">UF</label>
+                                <input type="text" class="form-control" id="inputUF" required>
                         </div>
                     </div>
-                </div>
-
-                <!-- Formas de pagamento -->
-                <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
-                    <h5 class="mb-3">Forma de Pagamento</h5>
-                    <div class="mb-3">
-                        <select class="form-select" id="inputFormaPagamento" required>
-                            <option value="pix">Pix</option>
-                            <option value="cartao">Cartão</option>
-                            <option value="boleto">Boleto</option>
-                            <option value="transferencia">Transferência Bancária</option>
-                        </select>
                     </div>
-                </div>
 
-                <!-- Quantidade -->
-                <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
-                    <h5 class="mb-3">Quantidade</h5>
-                    <div class="mb-3">
-                        <input type="number" class="form-control" id="inputQuantidade" required>
+                    <!-- Formas de pagamento -->
+                    <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
+                        <h5 class="mb-3">Forma de Pagamento</h5>
+                        <div class="mb-3">
+                            <select class="form-select" id="inputFormaPagamento" required>
+                                <option value="pix">Pix</option>
+                                <option value="cartao">Cartão</option>
+                                <option value="boleto">Boleto</option>
+                                <option value="transferencia">Transferência Bancária</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Campo oculto para o ID do produto -->
-                <input type="hidden" id="produtoId">
+                    <!-- Quantidade -->
+                    <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
+                        <h5 class="mb-3">Quantidade</h5>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="inputQuantidade" required>
+                        </div>
+                    </div>
 
-                <!-- Botão Finalizar Pedido -->
-                <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
-                    <button type="button" id="finalizarPedidoBtn" class="btn btn-primary">Finalizar Pedido</button>
-                </div>
+                    <!-- Campo oculto para o ID do produto -->
+                    <input type="hidden" id="produtoId">
+
+                    <!-- Botão Finalizar Pedido -->
+                    <div class="endereco-container mx-auto"> <!-- Adicionado mx-auto para centralizar -->
+                        <button type="button" id="finalizarPedidoBtn" class="btn btn-primary">Finalizar Pedido</button>
+                    </div>
             </form>
     </div>
 
@@ -270,57 +270,72 @@
     <script>
         // Define o estoque inicial de cada produto
         var estoqueInicial = {
-            xiaomi: 100,
-            smartW: 100,
-            iphone15: 100,
             notebook: 100,
             fonebass: 100,
-            fonebluetooth: 100,
+            fonepreto: 100,
             applemac: 100,
             samsungs24: 100,
-            fonebl2: 100,
+            smartW: 100,
+            iphone15: 100,
             iphone14: 100,
             iphone13: 100,
             samsungs21: 100,
             samsungs23: 100,
+            xiaomi: 100,
             redminote13: 100,
-            redminote12: 100
+            redminote12: 100,
+            fonebranco: 100,
+            fonebp: 100,
+            fonebright: 100,
+            fonebl: 100,
+            notebookapple: 100,
+            notebookdell20: 100,
+            notebookdellinspiron: 100, 
+            smartC: 100,
+            smartL: 100,
+            smartP: 100,    
+            smartWi: 100,  
+            smartBe: 100,
+            notebookdellxps16: 100
         };
-
+    
         // Verifica se o estoque já está definido no localStorage
         if (!localStorage.getItem("estoque")) {
             // Se não estiver definido, armazena o estoque inicial no localStorage
             localStorage.setItem("estoque", JSON.stringify(estoqueInicial));
-        } else {
-            // Se estiver definido, atualiza o estoque para os novos valores
-            var estoqueAtual = JSON.parse(localStorage.getItem("estoque"));
-            for (var produto in estoqueInicial) {
-                estoqueAtual[produto] = 100;
-            }
-            localStorage.setItem("estoque", JSON.stringify(estoqueAtual));
         }
-
+    
+        // Função para atualizar o estoque na Local Storage
+        function atualizarEstoque(produto, quantidade) {
+            var estoqueAtual = JSON.parse(localStorage.getItem("estoque"));
+            if (estoqueAtual[produto] !== undefined) {
+                estoqueAtual[produto] -= quantidade;
+                localStorage.setItem("estoque", JSON.stringify(estoqueAtual));
+            } else {
+                alert("Produto não encontrado no estoque.");
+            }
+        }
+    
         document.addEventListener("DOMContentLoaded", function() {
             // Obtém os parâmetros da URL
             var urlParams = new URLSearchParams(window.location.search);
             var produtoId = urlParams.get('produto');
-
+    
             // Define o valor do campo oculto
             document.getElementById("produtoId").value = produtoId;
-
+    
             // Adiciona um ouvinte de evento de clique ao botão "Finalizar Pedido"
             document.getElementById("finalizarPedidoBtn").addEventListener("click", function() {
                 var quantidade = parseInt(document.getElementById("inputQuantidade").value);
                 var produto = document.getElementById("produtoId").value;
-
+    
                 if (quantidade > 0) {
                     var estoque = JSON.parse(localStorage.getItem("estoque"));
-
-                    if (quantidade <= estoque[produto]) {
-                        estoque[produto] -= quantidade;
-                        localStorage.setItem("estoque", JSON.stringify(estoque));
+    
+                    if (estoque[produto] !== undefined && quantidade <= estoque[produto]) {
+                        atualizarEstoque(produto, quantidade); // Atualiza o estoque
                         alert("Pedido finalizado com sucesso!");
-
+    
                         // Limpa o formulário após a finalização do pedido
                         document.getElementById("formPedido").reset();
                     } else {
@@ -330,8 +345,159 @@
                     alert("Quantidade inválida! Por favor, insira uma quantidade válida.");
                 }
             });
+    
+            // Adiciona um ouvinte de evento de clique ao botão "Finalizar Pedido" do produto "Notebook Dell 2.0"
+            document.getElementById("finalizarPedidoBtn8").addEventListener("click", function() {
+                var quantidade = parseInt(document.getElementById("inputQuantidadeNotebookDell").value);
+                var produto = "notebookdell20"; // Produto "Notebook Dell 2.0"
+    
+                if (quantidade > 0) {
+                    var estoque = JSON.parse(localStorage.getItem("estoque"));
+    
+                    if (estoque[produto] !== undefined && quantidade <= estoque[produto]) {
+                        atualizarEstoque(produto, quantidade); // Atualiza o estoque
+                        alert("Pedido finalizado com sucesso!");
+    
+                        // Limpa o formulário após a finalização do pedido
+                        document.getElementById("inputQuantidadeNotebookDell").value = "";
+                    } else {
+                        alert("Quantidade indisponível em estoque. Por favor, selecione uma quantidade menor.");
+                    }
+                } else {
+                    alert("Quantidade inválida! Por favor, insira uma quantidade válida.");
+                }
+            });
+    
+            // Adiciona um ouvinte de evento de clique ao botão "Finalizar Pedido" do produto "Notebook Dell Inspiron"
+            document.getElementById("finalizarPedidoBtnNotebookDellInspiron").addEventListener("click", function(event) {
+                event.preventDefault(); // Impede o comportamento padrão do link
+    
+                var quantidade = 1; // Por padrão, será 1, pois não há campo de entrada de quantidade neste caso
+                var produto = "notebookdellinspiron"; // Produto "Notebook Dell Inspiron"
+    
+                var estoque = JSON.parse(localStorage.getItem("estoque"));
+    
+                if (estoque[produto] !== undefined && quantidade <= estoque[produto]) {
+                    atualizarEstoque(produto, quantidade); // Atualiza o estoque
+                    alert("Pedido finalizado com sucesso!");
+                } else {
+                    alert("Quantidade indisponível em estoque. Por favor, selecione uma quantidade menor.");
+                }
+            });
+    
+            // Adiciona um ouvinte de evento de clique ao botão "Finalizar Pedido" do produto "Notebook Dell XPS 16"
+            document.getElementById("finalizarPedidoBtnNotebookDellXPS16").addEventListener("click", function(event) {
+                event.preventDefault(); // Impede o comportamento padrão do link
+    
+                var quantidade = 1; // Por padrão, será 1, pois não há campo de entrada de quantidade neste caso
+                var produto = "notebookdellxps16"; // Produto "Notebook Dell XPS 16"
+    
+                var estoque = JSON.parse(localStorage.getItem("estoque"));
+    
+                if (estoque[produto] !== undefined && quantidade <= estoque[produto]) {
+                    atualizarEstoque(produto, quantidade); // Atualiza o estoque
+                    alert("Pedido finalizado com sucesso!");
+                } else {
+                    alert("Quantidade indisponível em estoque. Por favor, selecione uma quantidade menor.");
+                }
+            });
+            // Adiciona um ouvinte de evento de clique ao botão "Finalizar Pedido" do produto "Smart C"
+            document.getElementById("finalizarPedidoBtnSmartC").addEventListener("click", function(event) {
+                event.preventDefault(); // Impede o comportamento padrão do link
+
+                var quantidade = 1; // Por padrão, será 1, pois não há campo de entrada de quantidade neste caso
+                var produto = "smartc"; // Produto "Smart C"
+
+                var estoque = JSON.parse(localStorage.getItem("estoque"));
+
+                if (estoque[produto] !== undefined && quantidade <= estoque[produto]) {
+                    atualizarEstoque(produto, quantidade); // Atualiza o estoque
+                    alert("Pedido finalizado com sucesso!");
+                } else {
+                    alert("Quantidade indisponível em estoque. Por favor, selecione uma quantidade menor.");
+                }
+            });
+             // Adiciona um ouvinte de evento de clique ao botão "Finalizar Pedido" do produto "Smart L"
+            document.getElementById("finalizarPedidoBtnSmartL").addEventListener("click", function(event) {
+                event.preventDefault(); // Impede o comportamento padrão do link
+
+                var quantidade = 1; // Por padrão, será 1, pois não há campo de entrada de quantidade neste caso
+                var produto = "smartl"; // Produto "Smart L"
+
+                var estoque = JSON.parse(localStorage.getItem("estoque"));
+
+                if (estoque[produto] !== undefined && quantidade <= estoque[produto]) {
+                    atualizarEstoque(produto, quantidade); // Atualiza o estoque
+                    alert("Pedido finalizado com sucesso!");
+                } else {
+                    alert("Quantidade indisponível em estoque. Por favor, selecione uma quantidade menor.");
+                }
+            });
+            // Adiciona um ouvinte de evento de clique ao botão "Finalizar Pedido" do produto "Smart P"
+            document.getElementById("finalizarPedidoBtnSmartP").addEventListener("click", function(event) {
+                event.preventDefault(); // Impede o comportamento padrão do link
+
+                var quantidade = 1; // Por padrão, será 1, pois não há campo de entrada de quantidade neste caso
+                var produto = "smartp"; // Produto "Smart P"
+
+                var estoque = JSON.parse(localStorage.getItem("estoque"));
+
+                if (estoque[produto] !== undefined && quantidade <= estoque[produto]) {
+                    atualizarEstoque(produto, quantidade); // Atualiza o estoque
+                    alert("Pedido finalizado com sucesso!");
+                } else {
+                    alert("Quantidade indisponível em estoque. Por favor, selecione uma quantidade menor.");
+                }
+            });
+
+            // Adiciona um ouvinte de evento de clique ao botão "Finalizar Pedido" do produto "Smart Wi"
+            document.getElementById("finalizarPedidoBtnSmartWi").addEventListener("click", function(event) {
+                event.preventDefault(); // Impede o comportamento padrão do link
+
+                var quantidade = 1; // Por padrão, será 1, pois não há campo de entrada de quantidade neste caso
+                var produto = "smartwi"; // Produto "Smart Wi"
+
+                var estoque = JSON.parse(localStorage.getItem("estoque"));
+
+                if (estoque[produto] !== undefined && quantidade <= estoque[produto]) {
+                    atualizarEstoque(produto, quantidade); // Atualiza o estoque
+                    alert("Pedido finalizado com sucesso!");
+                } else {
+                    alert("Quantidade indisponível em estoque. Por favor, selecione uma quantidade menor.");
+                }
+            });
+
+            // Adiciona um ouvinte de evento de clique ao botão "Finalizar Pedido" do produto "Smart Be"
+            document.getElementById("finalizarPedidoBtnSmartBe").addEventListener("click", function(event) {
+                event.preventDefault(); // Impede o comportamento padrão do link
+
+                var quantidade = 1; // Por padrão, será 1, pois não há campo de entrada de quantidade neste caso
+                var produto = "smartbe"; // Produto "Smart Be"
+
+                var estoque = JSON.parse(localStorage.getItem("estoque"));
+
+                if (estoque[produto] !== undefined && quantidade <= estoque[produto]) {
+                    atualizarEstoque(produto, quantidade); // Atualiza o estoque
+                    alert("Pedido finalizado com sucesso!");
+                } else {
+                    alert("Quantidade indisponível em estoque. Por favor, selecione uma quantidade menor.");
+                }
+            });
         });
     </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    
     
 
     
