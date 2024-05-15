@@ -287,7 +287,6 @@
             fonebranco: 100,
             fonebp: 100,
             fonebright: 100,
-            fonebl: 100,
             notebookapple: 100,
             notebookdell20: 100,
             notebookdellinspiron: 100, 
@@ -296,6 +295,7 @@
             smartP: 100,    
             smartWi: 100,  
             smartBe: 100,
+            foneBL:100,
             notebookdellxps16: 100
         };
     
@@ -483,7 +483,26 @@
                     alert("Quantidade indisponível em estoque. Por favor, selecione uma quantidade menor.");
                 }
             });
-        });
+            
+            document.addEventListener("DOMContentLoaded", function() {
+            // Adiciona um ouvinte de evento de clique ao botão "Finalizar Pedido" do produto "Fone BL"
+             document.getElementById("finalizarPedidoBtnFoneBL").addEventListener("click", function(event) {
+             event.preventDefault(); // Impede o comportamento padrão do link
+
+            var quantidade = 1; // Por padrão, será 1, pois não há campo de entrada de quantidade neste caso
+            var produto = "fonebl2"; // Produto "Fone BL"
+
+            var estoque = JSON.parse(localStorage.getItem("estoque"));
+
+            if (estoque[produto] !== undefined && quantidade <= estoque[produto]) {
+                atualizarEstoque(produto, quantidade); // Atualiza o estoque
+                alert("Pedido finalizado com sucesso!");
+            } else {
+                alert("Quantidade indisponível em estoque. Por favor, selecione uma quantidade menor.");
+            }
+            });
+         });
+    });
     </script>
     
     
